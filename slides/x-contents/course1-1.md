@@ -208,14 +208,42 @@ ChatGPT に質問したら
 
 ### ソフトウェア開発分野
 
+<img src="/images/course1-1/software-development.png" alt="IT-industry" width="800"/>
+
+---sub-page---
+
+### 開発手法
+
+- ウォーターフォール開発（Waterfall）
+- アジャイル開発（Agile）
+
+https://products.sint.co.jp/obpm/blog/agile-waterfall
+
+---page---
+
+## 授業前の準備とウォーミングアップについて
+
+```
+【調査】
+インターネットで、現在主流のプログラミング言語を調べ、気になった言語を１つ選びましょう。
+(講座内で説明するJavaやJavaScriptとは別のものが望ましい)
+
+【ハンズオン】
+ダウンロードとインストール
+  - Chromeブラウザ
+  - Visual Studio Code
+  - Git
+
+【ベストエフォートで下記を進めてください】
+  - 選択したプログラミング言語で「Hello World」を作成して実行してみる
+  - 個人の Github アカウントを作成し、最初の Github プロジェクトを作成する
+  - 「Hello World」プログラムをGithubで共有する
+```
+
 ---page---
 
 <section style="text-align: left;">
     <h1>質問応答</h1>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <br/>
     <br/>
     <h3 style="text-align: right;">つづく</h3>
