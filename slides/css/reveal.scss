@@ -649,7 +649,7 @@ $controlsArrowAngleActive: 36deg;
 
 	overflow: visible;
 	z-index: 1;
-	text-align: center;
+	// text-align: center;
 	text-align: left;
 	perspective: 600px;
 	perspective-origin: 50% 40%;
@@ -1538,7 +1538,7 @@ $overlayHeaderPadding: 5px;
 		left: 0;
 		top: 45%;
 		width: 100%;
-		// text-align: center;
+		text-align: center;
 		letter-spacing: normal;
 	}
 	.reveal > .overlay.overlay-preview .x-frame-error  {
