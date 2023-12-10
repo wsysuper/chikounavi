@@ -54,6 +54,43 @@
 
 ---page---
 
+## Git 一人作業時よく利用するコマンド
+
+- リモートの変更をローカルに取り込む
+  - `git pull`
+- コミット(commit)提出対象を追加する
+  - `git add .`
+- コミットする：チェックポイントを作成する
+  - `git comit -m '[message]'`
+- ローカルで新たなコミットをリモートへ反映する
+  - `git push`
+
+---page---
+
+## Shell の Hello World
+
+下記内容をファイル`hello.sh`として保存
+
+```sh[]
+#!/bin/sh
+
+echo "Hello World"
+```
+
+ファイル`hello.sh`に実行可能な権限をつける
+
+```sh
+> chmod +x hello.sh
+```
+
+ファイル`hello.sh`を実行する
+
+```sh
+> ./hello.sh
+```
+
+---page---
+
 ## ウェブ(Web)について
 
 ### URL の構成
@@ -63,18 +100,40 @@
   - [ドメインとサブドメイン](https://blog.hubspot.jp/marketing/parts-url)
   - [fqdn](https://www.nic.ad.jp./ja/basics/terms/fqdn.html)
 
-## リクエストとレスポンス
+---sub-page---
+
+### リクエストとレスポンス
 
 - リクエスト(request)
+  - ヘッダー(Header): 本文内容以外の情報
+    - メソッド(Method): GET/POST/PUT/DELETE ...
+    - その他情報
+  - ボディー(Body): 本文内容
 - レスポンス(response)
+  - ヘッダー(Header): 本文内容以外の情報
+    - その他情報
+  - ボディー(Body): 本文内容
+
+![req-res](/images/trivia/req-res.png)
 
 ---sub-page---
 
-## サーバ
+### API
+
+アプリケーション・プログラミング・インターフェース（Application Programming Interface）
+
+https://www.sbbit.jp/article/cont1/62752
 
 ---page---
 
-### データ構造
+## セマンティック バージョニング(SemVer)
+
+https://semver.org/lang/ja/
+互換性
+
+---page---
+
+## データ構造
 
 - 操作 (Operation)
   - 二進数 (Binary Number)
@@ -91,7 +150,22 @@
   - ヒープ (Heap)
   - グラフ (Graph)
 
+---page---
+
+## 二進数、ブーリアン
+
+### 進数変換
+
+[10 進数/16 進数/2 進数の変換テーブル](http://www.rtpro.yamaha.co.jp/RT/docs/misc/number-table.html)
+
 ---sub-page---
+
+### ブーリアン(Boolean)
+
+[論理演算](https://ja.wikipedia.org/wiki/%E8%AB%96%E7%90%86%E6%BC%94%E7%AE%97)
+[真理値表](https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%90%86%E5%80%A4%E8%A1%A8)
+
+---page---
 
 ### アルゴリズム
 
@@ -105,3 +179,15 @@
     - 二分探索 (Binary Search)
     - 幅優先探索 (Breadth First Search: BFS)
     - 深さ優先探索 (Depth First Search: DFS)
+
+---page---
+
+## ハッシュ
+
+---page---
+
+## エンコーディング・ディコーディング
+
+- 暗号化
+  - 対称
+  - 非対称
