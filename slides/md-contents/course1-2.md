@@ -191,6 +191,8 @@ OS 例：Windows, macOS, Chrome OS, Linux
 
 ---page---
 
+豆知識へ
+
 ---page---
 
 ## 宿題

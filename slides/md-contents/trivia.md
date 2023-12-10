@@ -56,12 +56,14 @@
 
 ## Git 一人作業時よく利用するコマンド
 
+- 初回リモートからリポジトリをローカルに取り込む
+  - `git clone [https://github.com/xxx.git]`
 - リモートの変更をローカルに取り込む
   - `git pull`
 - コミット(commit)提出対象を追加する
   - `git add .`
 - コミットする：チェックポイントを作成する
-  - `git comit -m '[message]'`
+  - `git commit -m '[message]'`
 - ローカルで新たなコミットをリモートへ反映する
   - `git push`
 
@@ -80,13 +82,13 @@ echo "Hello World"
 ファイル`hello.sh`に実行可能な権限をつける
 
 ```sh
-> chmod +x hello.sh
+$ chmod +x hello.sh
 ```
 
 ファイル`hello.sh`を実行する
 
 ```sh
-> ./hello.sh
+$ ./hello.sh
 ```
 
 ---page---
