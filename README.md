@@ -17,3 +17,9 @@ Installed node.js so that you can run `npm` command
 View the contents on browser
 
 http://localhost:8001
+
+## For PDF Print Version
+
+Modify slide URL as below, then you can print the page or save it as PDF
+
+http://localhost:8001/pages/course.html?print-pdf
