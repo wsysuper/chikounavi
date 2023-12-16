@@ -184,6 +184,98 @@ https://semver.org/lang/ja/
 
 ---page---
 
+## データ記述言語
+
+### JSON (JavaScript Object Notation、ジェイソン)
+
+https://ja.wikipedia.org/wiki/JavaScript_Object_Notation
+
+### YAML (YAML Ain't a Markup Language、ヤムル)
+
+https://ja.wikipedia.org/wiki/YAML
+
+- 変換ツール(例)
+  - https://www.json2yaml.com/
+  - https://www.json2yaml.com/convert-yaml-to-json
+
+---page---
+
+## 高級コマンド操作
+
+- 他のコマンド
+  - コマンドのファイル本体パスを表示する
+    - `which`
+  - ファイル中の文字列検索する
+    - `grep`
+  - 行数、文字数を数えるする
+    - `wc`
+
+---sub-page---
+
+### コマンドパラメータとオプション
+
+```shell
+$ ls -alh hello.sh
+-rwxr-xr-x  1 wsysuper  staff    45B Dec 10 21:59 hello.sh
+$ wc -l hello.sh
+       5 hello.sh
+```
+
+---sub-page---
+
+### パスについて (`.`, `..`, `~`)
+
+- 絶対パス：`/`と始まるパス
+
+```shell
+$ ls -alh /Users
+total 0
+drwxr-xr-x   5 root      admin   160B Dec  2 21:16 .
+drwxr-xr-x  20 root      wheel   640B Nov 19 03:13 ..
+-rw-r--r--   1 root      wheel     0B Nov 19 03:13 .localized
+drwxrwxrwt   7 root      wheel   224B Nov 19 03:13 Shared
+drwxr-x---+ 56 wsysuper  staff   1.8K Dec 16 12:30 wsysuper
+```
+
+- 相対パス：`/`以外で始まるパス
+
+```shell
+$ ls -alh ../hello
+```
+
+---sub-page---
+
+### パイプ (`>`, `>>`, `|`)
+
+```shell
+$ echo 'hello shell' > result.txt
+$ echo 'goodbye shell' >> result.txt
+$ cat result.txt | grep goodbye
+goodbye shell
+$ cat result.txt | grep goodbye | wc
+       1       2      14
+```
+
+---page---
+
+## プログラミングに利用する数学
+
+- 整数
+  - 素数(Prime Number)と合成数(Composite Number)
+- 小数点数
+  - 固定小数点数 (fixed-point number)
+  - 浮動小数点数 (floating-point number) [参考](https://ja.wikipedia.org/wiki/%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0)
+- 演算子 ([Javascript 例](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators))
+  - 算術演算子(`+`, `-`, `*`, `/`, `**`)
+  - 関係演算子(`<`, `>`, `<=`, `>=`)
+  - 等値演算子(`==`, `!=`, `===`, `!==`)
+- 優先順位 ([Javascript 例](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Operator_precedence))
+- 関数/写像 (Function/Mapping)
+- ベクトル (Vector) [参考](https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB)
+- 行列 (Matrix) [参考](https://ja.wikipedia.org/wiki/%E8%A1%8C%E5%88%97)
+
+---page---
+
 ## ハッシュ
 
 ---page---
