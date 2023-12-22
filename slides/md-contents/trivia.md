@@ -366,6 +366,44 @@ $ cat result.txt | grep goodbye | wc
 
 ---page---
 
+## 秘密通信はどう実現できる
+
+- Alice と Bob は遠くに離れているところに住んでいて、Alice さんは Bob さんにメッセージを伝えたいとしましょう。
+- ただし、メッセージの内容を他の人に知られたくありません。
+
+<img src="/images/trivia/alice-bob.png" alt="alice-bob" width="600"/>
+
+---sub-page---
+
+- 事前に秘密を共有すれば解決できそうだが、その秘密はどう共有するの？
+
+---page---
+
+## 配列とオブジェクト
+
+- array/list
+  - `[1, 2, 3, 4, 100, 200]`
+  - `["1", "hello", "world"]`
+- object/map/dictionary
+  - `{"name": "David", "age": 23}`
+- list of objects
+  - ```
+    [
+      {"name": "David", "age": 23},
+      {"name": "Bob", "age": 32},
+      {"name": "Alice", "age": 5}
+    ]
+    ```
+- object of lists and so on
+  - ```
+    {
+      "name": "David", "age": 23,
+      "hobby": ["ski", "skate", "driving", "golf"]
+    }
+    ```
+
+---page---
+
 ## エンコーディング・ディコーディング
 
 - 暗号化
