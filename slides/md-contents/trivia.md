@@ -406,6 +406,52 @@ $ cat result.txt | grep goodbye | wc
 
 ## エンコーディング・ディコーディング
 
-- 暗号化
-  - 対称
-  - 非対称
+- ユニコード(Unicode) エンコーディング (例:`UTF-8`)
+
+```js
+> encoded = new TextEncoder().encode("こんにちは、世界");
+Uint8Array(24) [
+  227, 129, 147, 227, 130,
+  147, 227, 129, 171, 227,
+  129, 161, 227, 129, 175,
+  227, 128, 129, 228, 184,
+  150, 231, 149, 140
+]
+> decoded = new TextDecoder("utf-8").decode(encoded);
+'こんにちは、世界'
+```
+
+---sub-page---
+
+- URI encode
+
+[オンラインツール](https://www.url-encode-decode.com/)
+
+```bash
+> encodeURIComponent('こんにちは、世界')
+'%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E3%80%81%E4%B8%96%E7%95%8C'
+> decodeURIComponent('%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E3%80%81%E4%B8%96%E7%95%8C')
+'こんにちは、世界'
+```
+
+---page---
+
+### Docker で仮想環境でサーバを立ち上げる
+
+```sh
+$ cd shared-materials/docker-examples/wordpress
+$ ls
+docker-compose.yml
+$ docker-compose up -d
+[+] Building 0.0s (0/0)                    docker:desktop-linux
+[+] Running 3/3
+ ✔ Network wordpress_default        Created                0.0s
+ ✔ Container wordpress-db-1         Started                0.0s
+ ✔ Container wordpress-wordpress-1  Started                0.0s
+```
+
+- ブラウザで下記 URL で結果確認
+  http://localhost:8080/
+
+- `docker-compose down`でサービスを停止する
+  - (docker-compose.yml ファイルと同じ場所で実施する)
