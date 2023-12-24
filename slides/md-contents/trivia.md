@@ -455,3 +455,47 @@ $ docker-compose up -d
 
 - `docker-compose down`でサービスを停止する
   - (docker-compose.yml ファイルと同じ場所で実施する)
+
+---page---
+
+### アルゴリズム: バブルソート
+
+```js
+function bubbleSort(a) => {
+  for (let end = a.length - 1; end >= 1; end--) {
+    for (let j = 0; j < end; j++) {
+      if (a[j] > a[j + 1]) {
+        swap(a, j, j + 1)
+      }
+    }
+  }
+}
+```
+
+```text [1|2-4|5-6|7]
+  3,2,4,1
+  2,3,4,1
+  2,3,4,1
+  2,3,1,4
+  2,3,1,4
+  2,1,3,4
+  1,2,3,4
+```
+
+---page---
+
+### 再帰的関数の例：ハノイの塔
+
+```js
+function hanoi(num, source, temp, target) {
+  if (num === 1) {
+    console.log(`${source}->${target}`)
+    return
+  }
+  hanoi(num - 1, source, target, temp)
+  console.log(`${source}->${target}`)
+  hanoi(num - 1, temp, source, target)
+}
+
+hanoi(3, 'a', 'b', 'c')
+```
