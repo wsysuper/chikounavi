@@ -1,3 +1,3 @@
-import { message, outputMessage } from './demo-export.mjs'
+import { message, outputMessage } from "./demo-export.mjs";
 
-outputMessage(message)
+outputMessage(message);

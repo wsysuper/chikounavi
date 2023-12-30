@@ -93,13 +93,13 @@ $ cat result.txt | shasum -a 256
 
 ```js
 // print a hello world message
-console.log('Hello world!') // hello world
+console.log("Hello world!"); // hello world
 
 /*
 This is a multi-line
 comment example
 */
-console.log('Goodbye!')
+console.log("Goodbye!");
 ```
 
 - Java comment
@@ -160,13 +160,13 @@ print("Hello world!") # another comment
 1. 同ディレクトリ配下で、下記 Javascript の例を`guess.js`として保存し、実行してみる
    - `node guess.js`
    - ```js
-     const prompt = require('prompt-sync')()
-     const input = prompt('Guess a number (0-9):')
-     const inputNum = Number(input)
+     const prompt = require("prompt-sync")();
+     const input = prompt("Guess a number (0-9):");
+     const inputNum = Number(input);
      if (inputNum === 6) {
-       console.log('You guessed a very lucky number!')
+       console.log("You guessed a very lucky number!");
      } else {
-       console.log('You guessed', inputNum)
+       console.log("You guessed", inputNum);
      }
      ```
 1. それを編集して、シンプルな Guess ゲーム([参考](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html))を実現しよう

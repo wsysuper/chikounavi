@@ -25,14 +25,14 @@
 ```js
 function isPrime(x) {
   if (x <= 1) {
-    return false
+    return false;
   }
   for (let i = 2; i <= Math.sqrt(x); i++) {
     if (x % i === 0) {
-      return false
+      return false;
     }
   }
-  return true
+  return true;
 }
 // isPrime(1) => false
 // isPrime(2) => true
@@ -68,52 +68,52 @@ function isPrime(x) {
 
 ```js []
 // use library to get user input
-const prompt = require('prompt-sync')({ sigint: true })
+const prompt = require("prompt-sync")({ sigint: true });
 
 // output num1 is lower or higher than num2
 // returns if num1 and num2 are equal
 function compare(num1, num2) {
-  let res = false
+  let res = false;
   if (num1 < num2) {
-    console.log(`${num1} is lower`)
+    console.log(`${num1} is lower`);
   } else if (num1 > num2) {
-    console.log(`${num1} is higher`)
+    console.log(`${num1} is higher`);
   } else {
-    res = true
+    res = true;
   }
-  return res
+  return res;
 }
 
 function main() {
-  const answer = Math.floor(Math.random() * 100)
-  const history = []
-  let guessed = false
-  let score = 10
-  console.log('Your inital score is:', score, '\n')
+  const answer = Math.floor(Math.random() * 100);
+  const history = [];
+  let guessed = false;
+  let score = 10;
+  console.log("Your inital score is:", score, "\n");
 
   do {
-    const input = prompt('Guess a number (0-99): ')
-    const inputNum = Number(input)
-    history.push(inputNum)
-    guessed = compare(inputNum, answer)
-    console.log(`guessed history: ${history}`)
+    const input = prompt("Guess a number (0-99): ");
+    const inputNum = Number(input);
+    history.push(inputNum);
+    guessed = compare(inputNum, answer);
+    console.log(`guessed history: ${history}`);
     if (!guessed) {
-      score -= 1
+      score -= 1;
     }
-    console.log('Your score:', score, '\n')
+    console.log("Your score:", score, "\n");
     if (score === 0) {
-      break
+      break;
     }
-  } while (!guessed)
+  } while (!guessed);
 
   if (guessed) {
-    console.log(`You win! Answer:${answer} Score:${score}`)
+    console.log(`You win! Answer:${answer} Score:${score}`);
   } else {
-    console.log(`You lose! Answer:${answer} Score:${score}`)
+    console.log(`You lose! Answer:${answer} Score:${score}`);
   }
 }
 
-main()
+main();
 ```
 
 ---page---
@@ -121,10 +121,10 @@ main()
 ### [Template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ```js
-const age = 20
-const name = 'David'
-const message = `Hello ${name}, your age is ${age}.`
-console.log(message) // => Hello David, your age is 20.
+const age = 20;
+const name = "David";
+const message = `Hello ${name}, your age is ${age}.`;
+console.log(message); // => Hello David, your age is 20.
 ```
 
 ---sub-page---
@@ -187,17 +187,17 @@ console.log(message) // => Hello David, your age is 20.
 - [Arrow function `=>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ```js
-const plusOne = (x) => x + 1
-console.log(plusOne(100)) // => 101
+const plusOne = (x) => x + 1;
+console.log(plusOne(100)); // => 101
 ```
 
 ```js
 const minusOneIfOdd = (x) => {
   if (x % 2 !== 0) {
-    return x - 1
+    return x - 1;
   }
-  return x
-}
+  return x;
+};
 ```
 
 - [Recursive function](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
@@ -210,9 +210,9 @@ f(x) = f(x-1) * x;  if x > 0
 ```js
 function factorial(x) {
   if (x === 0) {
-    return 1
+    return 1;
   }
-  return factorial(x - 1) * x
+  return factorial(x - 1) * x;
 }
 ```
 

@@ -489,13 +489,13 @@ function bubbleSort(a) => {
 ```js
 function hanoi(num, source, temp, target) {
   if (num === 1) {
-    console.log(`${source}->${target}`)
-    return
+    console.log(`${source}->${target}`);
+    return;
   }
-  hanoi(num - 1, source, target, temp)
-  console.log(`${source}->${target}`)
-  hanoi(num - 1, temp, source, target)
+  hanoi(num - 1, source, target, temp);
+  console.log(`${source}->${target}`);
+  hanoi(num - 1, temp, source, target);
 }
 
-hanoi(3, 'a', 'b', 'c')
+hanoi(3, "a", "b", "c");
 ```

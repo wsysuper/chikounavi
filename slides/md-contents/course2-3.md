@@ -27,12 +27,12 @@
 - use temp
 
 ```js
-let a = 1
-let b = 2
-const temp = a
-a = b
-b = temp
-console.log(a, b)
+let a = 1;
+let b = 2;
+const temp = a;
+a = b;
+b = temp;
+console.log(a, b);
 ```
 
 ---sub-page---
@@ -40,21 +40,21 @@ console.log(a, b)
 - use +/-
 
 ```js
-let a = 1
-let b = 2
-a = a + b
-b = a - b
-a = a - b
-console.log(a, b)
+let a = 1;
+let b = 2;
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(a, b);
 ```
 
 ```js
-let a = 1
-let b = 2
-a += b
-b = a - b
-a -= b
-console.log(a, b)
+let a = 1;
+let b = 2;
+a += b;
+b = a - b;
+a -= b;
+console.log(a, b);
 ```
 
 ---sub-page---
@@ -62,21 +62,21 @@ console.log(a, b)
 - use XOR
 
 ```js
-let a = 1
-let b = 2
-a = a ^ b
-b = a ^ b
-a = a ^ b
-console.log(a, b)
+let a = 1;
+let b = 2;
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+console.log(a, b);
 ```
 
 ```js
-let a = 1
-let b = 2
-a ^= b
-b ^= a
-a ^= b
-console.log(a, b)
+let a = 1;
+let b = 2;
+a ^= b;
+b ^= a;
+a ^= b;
+console.log(a, b);
 ```
 
 ---page---

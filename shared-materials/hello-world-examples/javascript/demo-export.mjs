@@ -1,7 +1,7 @@
-const message = 'Hello'
+const message = "Hello";
 
 function outputMessage(m) {
-  console.log(m)
+  console.log(m);
 }
 
-export { message, outputMessage }
+export { message, outputMessage };
