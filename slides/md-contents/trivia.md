@@ -499,3 +499,19 @@ function hanoi(num, source, temp, target) {
 
 hanoi(3, "a", "b", "c");
 ```
+
+---page---
+
+## いろんなケース
+
+| 名称                                       | 用例             |
+| ------------------------------------------ | ---------------- |
+| Camel case(ロワーキャメルケース)           | sampleTestData   |
+| Upper camel case(アッパーキャメルケース)   | SampleTestData   |
+| ^ Pascal case(パスカルケース)              | SampleTestData   |
+| Snake case(スネークケース)                 | sample_test_data |
+| Upper snake case(アッパーグスネークケース) | SAMPLE_TEST_DATA |
+| Kebab case(ケバブケース)                   | sample-test-data |
+| Upper kebab case(トレインケース)           | Sample-Test-Data |
+| ^ Train case(トレインケース)               | Sample-Test-Data |
+| Title case(タイトルケース)                 | Sample Test Data |
