@@ -515,3 +515,43 @@ hanoi(3, "a", "b", "c");
 | Upper kebab case(トレインケース)           | Sample-Test-Data |
 | ^ Train case(トレインケース)               | Sample-Test-Data |
 | Title case(タイトルケース)                 | Sample Test Data |
+
+---page---
+
+## (再掲)秘密通信はどう実現できる
+
+- Alice と Bob は遠くに離れているところに住んでいて、Alice さんは Bob さんにメッセージを伝えたいとしましょう。
+- ただし、メッセージの内容を他の人に知られたくありません。
+
+<img src="/images/trivia/alice-bob.png" alt="alice-bob" width="600"/>
+
+- 事前に秘密を共有すれば解決できそうだが、その秘密はどう共有するの？
+
+---sub-page---
+
+## [公開鍵暗号方式](https://udemy.benesse.co.jp/development/blockchain/public-key-cryptography.html)
+
+- 公開鍵と秘密鍵のキーペアを生成する
+  - 公開鍵：暗号化する（全世界に公開しても良い）
+  - 秘密鍵：復号化するのに使う（誰にも公開しない）
+- 安全性
+  - 公開鍵や暗号文から秘密鍵へ推測困難
+  - 原理：素因数分解問題の計算困難性（計算量的安全性）
+
+---page---
+
+## 【ハンズオン】SSH で Github を利用する
+
+- [新しい SSH キーを生成する](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub アカウントに新 SSH キーを追加する](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+- [接続可能かを検証する](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
+---page---
+
+## JavaScript 、その他
+
+- [分割代入 (Destructuring assignment) ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [残余引数 (Rest parameters)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+- JSON 操作
+  - [JSON.parse()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+  - [JSON.stringify()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
