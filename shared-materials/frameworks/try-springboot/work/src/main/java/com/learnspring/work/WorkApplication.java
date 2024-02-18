@@ -5,10 +5,15 @@ import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import com.learnspring.work.uploadingfiles.storage.StorageProperties;
+import com.learnspring.work.uploadingfiles.storage.StorageService;
+
 @SpringBootApplication
+@EnableConfigurationProperties(StorageProperties.class)
 public class WorkApplication {
 
 	public static void main(String[] args) {
@@ -27,6 +32,14 @@ public class WorkApplication {
 				System.out.println(beanName);
 			}
 
+		};
+	}
+
+	@Bean
+	CommandLineRunner init(StorageService storageService) {
+		return (args) -> {
+			storageService.deleteAll();
+			storageService.init();
 		};
 	}
 }

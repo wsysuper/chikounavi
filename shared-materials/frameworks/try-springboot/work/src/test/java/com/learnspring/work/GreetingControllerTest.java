@@ -20,7 +20,6 @@ public class GreetingControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    @SuppressWarnings("null")
     @Test
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/greeting").param("name", "abc").accept(MediaType.TEXT_HTML))
