@@ -555,3 +555,44 @@ hanoi(3, "a", "b", "c");
 - JSON 操作
   - [JSON.parse()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
   - [JSON.stringify()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+
+---page---
+
+## Curl コマンド
+
+- Client URL：HTTP リクエスト手軽に投げるツール
+- 使用例
+
+```sh
+# GETは省略できる
+curl https://google.com
+# 遷移を従う
+curl -L https://google.com
+# ファイルとして保存
+curl -L https://google.com -o result.html
+# POST form
+curl http://localhost:8080/demo/add -d name=First -d email=someemail@someemailprovider.com
+# POST Json
+curl -X POST -H "Content-Type: application/json" -d '{"name" : "佐藤" , "mail" : "sato@example.com"}' http://localhost:5000/api/v1/users
+```
+
+- その他
+
+```
+curl --help
+Usage: curl [options...] <url>
+ -d, --data <data>          HTTP POST data
+ -f, --fail                 Fail fast with no output on HTTP errors
+ -h, --help <category>      Get help for commands
+ -i, --include              Include protocol response headers in the output
+ -o, --output <file>        Write to file instead of stdout
+ -O, --remote-name          Write output to a file named as the remote file
+ -s, --silent               Silent mode
+ -T, --upload-file <file>   Transfer local FILE to destination
+ -u, --user <user:password> Server user and password
+ -A, --user-agent <name>    Send User-Agent <name> to server
+ -v, --verbose              Make the operation more talkative
+ -V, --version              Show version number and quit
+```
+
+---page---
